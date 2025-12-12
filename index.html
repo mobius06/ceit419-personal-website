@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Info Page</title>
+    <title>AI Study Assistant - Project Info Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <style>
         :root {
-            /* Basic colors as suggested in [cite: 64] */
             --primary-color: #0d6efd;
             --secondary-bg: #f8f9fa;
         }
@@ -19,7 +19,6 @@
             color: #333;
         }
 
-        /* Section A: Project Title - Prominent at the top [cite: 13] */
         .hero-section {
             background-color: var(--primary-color);
             color: white;
@@ -51,61 +50,73 @@
             max-width: 100%;
             height: auto;
             border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Ensuring readability and simple spacing [cite: 57, 64] */
         .content-card {
             background: white;
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             margin-bottom: 2rem;
         }
     </style>
 </head>
+
 <body>
 
     <header class="hero-section">
         <div class="container">
-            <h1 class="display-4 fw-bold">[Insert Project Title Here]</h1>
+            <h1 class="display-4 fw-bold">AI Study Assistant</h1>
             <p class="lead">CEIT 435 - Semester Project</p>
         </div>
     </header>
 
     <main class="container">
-        
         <section id="team" class="content-card">
             <h2 class="section-header">Team Information</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h4><strong>Group Name:</strong> [Optional: Group Name]</h4>
+                    <h4><strong>Group Name:</strong> BDSMA (Group 06)</h4>
                     <h5>Team Members:</h5>
                     <ul class="list-unstyled">
-                        <li>[Member 1 Name]</li>
-                        <li>[Member 2 Name]</li>
-                        <li>[Member 3 Name]</li>
-                        <li>[Member 4 Name]</li>
+                        <li>Muhammed Ali Özer (Project Leader)</li>
+                        <li>Barış Müftüoğlu (Technical Lead)</li>
+                        <li>Durmuş Deniz Gedik (Report Coordinator)</li>
+                        <li>Aziz Sinan Yıldırım (Test Designer)</li>
+                        <li>Mehmed Hayırlı (Requirements Analyst)</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <div class="alert alert-light border">
                         <strong>Official Contact Email:</strong><br>
-                        <a href="mailto:project-email@example.com">[project-email@example.com]</a>
+                        <a href="mailto:ceit435.bdsma.project@gmail.com">ozer.ali@metu.edu.tr</a>
                         <br>
-                        <small class="text-muted">(Note: Use a dedicated project address forwarded to your emails)</small>
+                        <small class="text-muted">
+                            (This dedicated project email address is forwarded to each team member.)
+                        </small>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="summary" class="content-card">
             <h2 class="section-header">Project Summary</h2>
             <p>
-                [Paragraph 1: Describe the problem you are solving and who your target users are. Clearly introduce the main idea of your project.]
+                AI Study Assistant is a mobile-based learning companion designed for high school students who struggle
+                with understanding math and science questions.
+                Students take a photo of a question using the mobile app, the system recognizes it with OCR, and an AI
+                engine generates guided, step-by-step explanations.
+                Instead of simply returning the final answer, the assistant focuses on intermediate steps, hints, and
+                conceptual reasoning tailored to the student’s level.
             </p>
             <p>
-                [Paragraph 2: Explain why this project is meaningful. What value does it add? How does it help the users defined in the first paragraph?]
+                This project is meaningful because many existing tools encourage answer-copying rather than real
+                learning.
+                Our application aims to support deep understanding by offering structured, curriculum-relevant guidance
+                on a device students already use every day: their smartphone.
+                By combining explainable AI, question history, and simple progress summaries, AI Study Assistant helps
+                learners build confidence in problem-solving and gives parents/teachers a safer, education-focused
+                alternative to generic AI apps.
             </p>
         </section>
 
@@ -114,11 +125,31 @@
                 <section id="features" class="content-card h-100">
                     <h2 class="section-header">Key Features</h2>
                     <ul class="feature-list">
-                        <li><strong>[Feature 1]:</strong> [Brief description]</li>
-                        <li><strong>[Feature 2]:</strong> [Brief description]</li>
-                        <li><strong>[Feature 3]:</strong> [Brief description]</li>
-                        <li><strong>[Feature 4]:</strong> [Brief description]</li>
-                        <li><strong>[Feature 5]:</strong> [Brief description]</li>
+                        <li>
+                            <strong>Smart Question Capture:</strong>
+                            Students snap or upload a photo of their math or science problem; OCR extracts the content
+                            for AI processing.
+                        </li>
+                        <li>
+                            <strong>Step-by-Step Explanations:</strong>
+                            The AI walks through each step of the solution, highlighting formulas, reasoning, and common
+                            mistakes.
+                        </li>
+                        <li>
+                            <strong>High School Focus:</strong>
+                            Covers typical high school topics such as algebra, functions, geometry, basic calculus
+                            concepts, physics (mechanics, electricity), and introductory chemistry.
+                        </li>
+                        <li>
+                            <strong>Adaptive Practice:</strong>
+                            Generates follow-up questions with similar difficulty to reinforce learning based on the
+                            student’s performance.
+                        </li>
+                        <li>
+                            <strong>Progress & Topic Overview:</strong>
+                            A simple mobile dashboard shows solved questions, frequently asked topics, and suggested
+                            areas to review.
+                        </li>
                     </ul>
                 </section>
             </div>
@@ -127,8 +158,12 @@
                 <section id="audience" class="content-card h-100">
                     <h2 class="section-header">Target Audience</h2>
                     <p>
-                        [Describe the specific group of people who will use this system. Example: "High school chemistry teachers looking for interactive lab simulations" or "University students organizing study groups."]
+                        The primary target audience is <strong>high school students (grades 9–12)</strong> who need
+                        additional support in math and science while studying outside the classroom.
+                        The application is explicitly designed as a <strong>mobile-based solution</strong>, aiming at
+                        students who prefer to use their smartphones for homework and exam preparation.
                     </p>
+
                 </section>
             </div>
         </div>
@@ -140,23 +175,36 @@
                     <div class="card h-100 border-primary">
                         <div class="card-header bg-primary text-white">Core Web</div>
                         <div class="card-body">
-                            <p class="card-text">HTML5, CSS3, JavaScript</p>
+                            <p class="card-text">
+                                HTML5, CSS3, JavaScript<br>
+                                (Project info page and documentation)
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 border-success">
-                        <div class="card-header bg-success text-white">UI Libraries</div>
+                        <div class="card-header bg-success text-white">Mobile Development</div>
                         <div class="card-body">
-                            <p class="card-text">[e.g., Bootstrap 5, Tailwind, or 'None']</p>
+                            <p class="card-text">
+                                Flutter (Android &amp; iOS)<br>
+                                Dart for UI &amp; client-side logic
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 mb-3">
                     <div class="card h-100 border-warning">
                         <div class="card-header bg-warning text-dark">Backend / Data</div>
                         <div class="card-body">
-                            <p class="card-text">[e.g., Firebase, LocalStorage, JSON API]</p>
+                            <p class="card-text">
+                                Python API (Flask)<br>
+                                Firebase Firestore (Data Storage)<br>
+                                Firebase Auth (Authentication)<br>
+                                OCR &amp; LLM-based AI Services
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -166,11 +214,12 @@
         <section id="mockup" class="content-card">
             <h2 class="section-header">Visual Mockup</h2>
             <div class="mockup-container">
-                <img src="https://placehold.co/800x400?text=Project+Mockup+Image" alt="Project Wireframe" class="mockup-img mb-3">
-                
+                <img src="mock-image-project.jpeg"
+                    alt="AI Study Assistant Mobile Wireframe" class="mockup-img mb-3">
                 <figure class="text-center">
                     <figcaption class="blockquote-footer mt-2">
-                        [Caption: Figure 1. The dashboard view showing the main user interface and navigation menu.]
+                        Figure 1. Mobile dashboard view showing question capture, recent topics, and basic progress
+                        summary.
                     </figcaption>
                 </figure>
             </div>
@@ -179,9 +228,8 @@
     </main>
 
     <footer class="text-center py-4 text-muted">
-        <p>&copy; 2025 [Group Name/Number]. CEIT 435 Project Draft.</p>
+        <p>&copy; 2025 BDSMA (Group 06). CEIT 435 Project Draft.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
